@@ -72,11 +72,12 @@ input,button{
     width: 95%;
     margin: auto;
     padding-left: 0.5rem;
+    padding-top: 1rem;
 }
 
 
 #newDate{
-    width: 95%;
+    width: 50%;
     margin: auto;
     padding-left: 0.5rem;
     color: var(--main);
