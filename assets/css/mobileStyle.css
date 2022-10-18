@@ -23,7 +23,7 @@ body{
 
 /*ヘッダーレイアウト*/
 .layout{
-    padding: 0.25rem 0.25rem;
+    padding: 0.5rem 0.25rem;
     margin: 0 auto;
 }
 
@@ -34,7 +34,6 @@ body{
 
 
 header h1{
-    color: aqua;
     font-size: 1.5rem;
     margin-bottom: 1;
 }
@@ -58,6 +57,7 @@ header h1{
 
 #datearea{
     margin: auto;
+    padding: auto;
 }
 
 input,button{
@@ -71,12 +71,14 @@ input,button{
 #newInput{
     width: 95%;
     margin: auto;
+    padding-left: 0.5rem;
 }
 
 
 #newDate{
     width: 95%;
     margin: auto;
+    padding-left: 0.5rem;
     color: var(--main);
 }
 
@@ -104,7 +106,8 @@ input,button{
     height: 3.5rem;
 }
 h2{
-    margin-top: 0.5em;
+    margin-top: 0; 
+    vertical-align: top;
 }
 
 #taskListBtn{
@@ -118,7 +121,7 @@ h2{
     align-items: center;
     justify-content: center;
     width: 45%;
-    padding: 0.75rem 1rem;
+    padding: 0.25rem 0.75rem;
     border-radius: 20%;
 }
 #sortTask:hover{
@@ -132,7 +135,7 @@ h2{
     align-items: center;
     justify-content: center;
     width: 45%;
-    padding:1rem;
+    padding:0.75rem;
     border-radius: 20%;
 }
 #delAll:hover{
@@ -140,15 +143,12 @@ h2{
     transition: 0.2s all linear;
 }
 
-#taskList{
-    padding: 1rem 0;
-}
 
 /*追加されるタスクのスタイル*/
 #taskList .taskRecord{
     margin: 1.2rem 0 1.2rem 0;
     background-color: var(--gray);
-    padding: 0.25rem;
+    padding: 0.8rem;
     border-radius: 1rem;
 }
 #taskList .taskRecord *{
@@ -206,7 +206,7 @@ h2{
 
 #taskList .taskRecord .content .text{
     color: var(--main);
-    font-size: 1.1rem;
+    font-size: small;
     width: 22.5rem;
 
 }
@@ -227,6 +227,7 @@ h2{
 }
 
 #taskList .taskRecord .actions .dateDiv .date{
+    font-size: small;
     width: 8rem;
 }
 
