@@ -14,12 +14,16 @@
 *{  
     font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro','メイリオ', 'Meiryo', '游ゴシック', 'Yu Gothic', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
     color: var(--main);
-    background: var(--bg);
+    background: rgb(175, 175, 175);
+}
+
+body{
+    margin: 0.2rem;
 }
 
 /*ヘッダーレイアウト*/
 .layout{
-    padding: 1rem 1rem;
+    padding: 0.25rem 0.25rem;
     margin: 0 auto;
 }
 
@@ -38,15 +42,13 @@ header h1{
 
 /*入力欄、日付、addボタン*/
 #textarea{
-    flex: auto;
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem;
-    margin-right: 1em;
+    padding: 0.25rem;
     border-radius: 1rem;
     background-color: var(--gray);
+    width: 80%;
+    height: 3rem;
 }
-#newToDo #textarea *{
+#textarea *{
     background-color: var(--gray);
 }
 
@@ -59,26 +61,29 @@ input,button{
 }
 
 #newInput{
-    width: 30em;
+    width: 95%;
 }
 
 
 #newDate{
+    width: 95%;
     color: var(--main);
-    width: 10.25rem;
-    padding-right: 4.2rem;
 }
 
 #newSubmit{
-    width: 71px;
-    padding: 1rem;
+    width: 15%;
+    padding: 0.25rem;
     border-radius: 20%;
+
     cursor: pointer;
 }
 #newSubmit:hover{
     background-color: var(--green);
     transition: 0.2s all linear;
 }
+
+
+
 
 
 /*タスクリスト見出し、deleteAllボタン*/
@@ -95,7 +100,6 @@ h2{
 #taskListBtn{
     display: flex;
     justify-content: space-between;
-    gap: 1rem;
     cursor: pointer;
     
 }
@@ -103,7 +107,7 @@ h2{
     display:flex;
     align-items: center;
     justify-content: center;
-    width: 71px;
+    width: 45%;
     padding: 0.75rem 1rem;
     border-radius: 20%;
 }
@@ -117,7 +121,7 @@ h2{
     display:flex;
     align-items: center;
     justify-content: center;
-    width: 71px;
+    width: 45%;
     padding:1rem;
     border-radius: 20%;
 }
