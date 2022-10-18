@@ -42,8 +42,9 @@ header h1{
 
 /*入力欄、日付、addボタン*/
 #textarea{
-    text-align: justify;
-	text-justify: distribute-all-lines;
+    display: flex;
+    flex-flow: column;
+    justify-content:space-between;
     padding: 0.25rem;
     border-radius: 1rem;
     background-color: var(--gray);
