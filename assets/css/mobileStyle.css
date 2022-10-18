@@ -14,7 +14,7 @@
 *{  
     font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro','メイリオ', 'Meiryo', '游ゴシック', 'Yu Gothic', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
     color: var(--main);
-    background: rgb(175, 175, 175);
+    background:var(--bg);
 }
 
 body{
@@ -55,9 +55,30 @@ header h1{
 }
 
 
+
+
+#newInputDiv{
+    width: 95%;
+    padding-left: 0.5rem;
+}
+
+#newInput{
+    width: 95%;
+    margin: auto;
+}
+
 #datearea{
     margin: auto;
     padding: auto;
+}
+
+#newDateDiv{
+    width: 95%;
+    padding-left: 0.5rem;
+}
+#newDate{
+    width: 60%;
+    color: var(--main);
 }
 
 input,button{
@@ -66,21 +87,6 @@ input,button{
     outline: none;
     background: none;
     background-color: var(--gray);
-}
-
-#newInput{
-    width: 95%;
-    margin: auto;
-    padding-left: 0.5rem;
-    padding-top: 1rem;
-}
-
-
-#newDate{
-    width: 50%;
-    margin: auto;
-    padding-left: 0.5rem;
-    color: var(--main);
 }
 
 #newSubmit{
@@ -164,7 +170,7 @@ h2{
 
 /*チェックボックス*/
 #taskList .taskRecord .content .labelDiv{
-    width: 2rem;
+    width: 1rem;
     margin-top: auto;
     margin-bottom: auto;
     padding-right: 1rem;
@@ -217,7 +223,6 @@ h2{
 
 #taskList .taskRecord .actions .dateDiv{
     display: flex;
-    padding-right: 2rem;
 }
 
 
@@ -238,6 +243,7 @@ h2{
 }
 
 #taskList .taskRecord .actions{
+    padding-left: 2rem;
     display: flex;
     justify-content: space-between;
     gap: 1.5rem;

@@ -67,7 +67,7 @@ input,button{
 }
 
 
-#newDate{
+#newDateDiv{
     color: var(--main);
     width: 10.25rem;
     padding-right: 4.2rem;
