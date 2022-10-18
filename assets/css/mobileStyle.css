@@ -42,6 +42,8 @@ header h1{
 
 /*入力欄、日付、addボタン*/
 #textarea{
+    justify-content:center;
+    align-items:center;
     padding: 0.25rem;
     border-radius: 1rem;
     background-color: var(--gray);
