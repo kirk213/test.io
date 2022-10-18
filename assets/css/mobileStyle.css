@@ -42,8 +42,8 @@ header h1{
 
 /*入力欄、日付、addボタン*/
 #textarea{
-    justify-content:center;
-    align-items:center;
+    text-align: justify;
+	text-justify: distribute-all-lines;
     padding: 0.25rem;
     border-radius: 1rem;
     background-color: var(--gray);
@@ -52,6 +52,11 @@ header h1{
 }
 #textarea *{
     background-color: var(--gray);
+}
+
+
+#datearea{
+    margin: auto;
 }
 
 input,button{
@@ -64,11 +69,13 @@ input,button{
 
 #newInput{
     width: 95%;
+    margin: auto;
 }
 
 
 #newDate{
     width: 95%;
+    margin: auto;
     color: var(--main);
 }
 
@@ -139,10 +146,8 @@ h2{
 /*追加されるタスクのスタイル*/
 #taskList .taskRecord{
     margin: 1.2rem 0 1.2rem 0;
-    display: flex;
-    justify-content: space-between;
     background-color: var(--gray);
-    padding: 1rem;
+    padding: 0.25rem;
     border-radius: 1rem;
 }
 #taskList .taskRecord *{
@@ -151,13 +156,13 @@ h2{
 
 #taskList .taskRecord .content{
     color: var(--bg);
-    width: 35em;
+    width: 30%;
     display: flex;
 }
 
 /*チェックボックス*/
 #taskList .taskRecord .content .labelDiv{
-    width: 16px;
+    width: 2rem;
     margin-top: auto;
     margin-bottom: auto;
     padding-right: 1rem;
