@@ -119,7 +119,7 @@ function addTaskList(){
         let placeholder = document.createElement("input");
         placeholder.setAttribute("type","text");
         placeholder.classList.add("placeholder");
-        placeholder.setAttribute("value","日時をクリックで変更 :")
+        placeholder.setAttribute("value","クリックで変更 :")
         placeholder.setAttribute("readOnly","true");
         
         let date = document.createElement("input");
@@ -161,7 +161,8 @@ function addTaskList(){
                 //readonlyを戻す
                 text.readOnly="true";
                 date.readOnly="true";
-                placeholder.style.color="rgb(66, 66, 66)"
+                placeholder.classList.add("placeholder");
+                placeholder.classList.remove("placeholderEnable");
                 alert("変更が保存されました");
                 /*変更した値を取得してforeachで回してる今の配列内のオブジェクトの値と入れ替えて、
                 ローカルストレージに保存し直してaddTaskList関数で変更後のタスクを再表示*/
@@ -179,7 +180,8 @@ function addTaskList(){
             //readonlyを外して、テキスト欄にォーカスをあわせる
             text.removeAttribute("readOnly");
             date.removeAttribute("readOnly");
-            placeholder.style.color="rgba(255, 255, 255, 0.87)"
+            placeholder.classList.add("placeholderEnable");
+            placeholder.classList.remove("placeholder");
             $(function() {
                 $.datetimepicker.setLocale('ja');
                 $(date).datetimepicker({

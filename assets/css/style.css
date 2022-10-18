@@ -215,7 +215,13 @@ h2{
 #taskList .taskRecord .actions .dateDiv .placeholder{
     font-size: small;
     color: var(--gray);
-    width: 9rem;
+    width: 6.25rem;
+}
+
+#taskList .taskRecord .actions .dateDiv .placeholderEnable{
+    font-size: small;
+    color: var(--main);
+    width: 6.25rem;
 }
 
 #taskList .taskRecord .actions .dateDiv .date{
