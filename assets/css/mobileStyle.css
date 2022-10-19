@@ -29,7 +29,8 @@ body{
 
 #newToDo{
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
+    width: 96vw;
 }
 
 
@@ -48,7 +49,7 @@ header h1{
     padding: 0.25rem;
     border-radius: 1rem;
     background-color: var(--gray);
-    width: 80%;
+    width: 78.5%;
     height: 3rem;
 }
 #textarea *{
@@ -61,6 +62,7 @@ header h1{
 #newInputDiv{
     width: 95%;
     padding-left: 0.5rem;
+    background-color: transparent;
 }
 
 #newInput{
@@ -76,9 +78,10 @@ header h1{
 #newDateDiv{
     width: 95%;
     padding-left: 0.5rem;
+    background-color: transparent;
 }
 #newDate{
-    width: 60%;
+    width: 64%;
     color: var(--main);
 }
 
@@ -91,7 +94,7 @@ input,button{
 }
 
 #newSubmit{
-    width: 15%;
+    width: 15.5%;
     padding: 0.25rem;
     border-radius: 20%;
 
@@ -110,8 +113,8 @@ input,button{
 #taskListHead{
     display: flex;
     justify-content: space-between;
-    margin: auto;
     height: 3.5rem;
+    width: 96vw;
 }
 h2{
     margin-top: 0; 
@@ -122,14 +125,15 @@ h2{
     display: flex;
     justify-content: space-between;
     cursor: pointer;
+    width: 34%;
     
 }
 #sortTask{
     display:flex;
     align-items: center;
     justify-content: center;
-    width: 45%;
-    padding: 0.25rem 0.75rem;
+    width: 42.5%;
+    padding: 0.25rem;
     border-radius: 20%;
 }
 #sortTask:hover{
@@ -142,8 +146,9 @@ h2{
     display:flex;
     align-items: center;
     justify-content: center;
-    width: 45%;
-    padding:0.75rem;
+    font-size: small;
+    width: 44.5%;
+    padding:0.25rem;
     border-radius: 20%;
 }
 #delAll:hover{
@@ -153,14 +158,19 @@ h2{
 
 
 /*追加されるタスクのスタイル*/
+#taskList{
+    width: 96vw;
+}
+
 #taskList .taskRecord{
+    width: 94vw;
     margin: 1rem 0 1rem 0;
     background-color: var(--gray);
-    padding: 0.5rem;
+    padding: 0.25rem 0.25rem 0.25rem 0.5rem;
     border-radius: 1rem;
 }
 #taskList .taskRecord *{
-    background-color: var(--gray);
+    background-color: transparent;
 }
 
 #taskList .taskRecord .content{
@@ -234,7 +244,7 @@ h2{
     display: block;
     font-size: small;
     color: var(--main);
-    width: 6.25rem;
+    width: 8.75rem;
 }
 
 #taskList .taskRecord .actions .dateDiv .date{
@@ -244,9 +254,8 @@ h2{
 
 #taskList .taskRecord .actions{
     padding-left: 1.5rem;
-    display: flex;
-    justify-content: space-between;
     color: var(--black);
+    text-align: right;
 }
 
 #taskList .taskRecord .actions button{
@@ -256,10 +265,10 @@ h2{
 }
 
 #taskList .taskRecord .actions .edit{
-    padding-left: 1.8rem;
+
 }
 #taskList .taskRecord .actions .save{
-    padding-right: 1.5rem;
+    
 }
 #taskList .taskRecord .actions .edit:hover{
     color: var(--blue);
@@ -269,6 +278,10 @@ h2{
 #taskList .taskRecord .actions .save:hover{
     color: var(--green);
     transition: 0.2s all linear;
+}
+#taskList .taskRecord .actions .delete{
+    padding-right: 0.25rem;
+    padding-left: 1rem;
 }
 
 #taskList .taskRecord .actions .delete:hover{

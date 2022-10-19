@@ -119,7 +119,7 @@ function addTaskList(){
         let placeholder = document.createElement("input");
         placeholder.setAttribute("type","text");
         placeholder.classList.add("placeholder");
-        placeholder.setAttribute("value","クリックで変更 :")
+        placeholder.setAttribute("value","日付をクリックで変更 :")
         placeholder.setAttribute("readOnly","true");
         
         let date = document.createElement("input");

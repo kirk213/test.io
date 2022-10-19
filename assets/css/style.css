@@ -215,7 +215,7 @@ h2{
 #taskList .taskRecord .actions .dateDiv .placeholder{
     font-size: small;
     color: var(--gray);
-    width: 6.25rem;
+    width: 9rem;
 }
 
 #taskList .taskRecord .actions .dateDiv .placeholderEnable{
