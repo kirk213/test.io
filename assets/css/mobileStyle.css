@@ -165,7 +165,6 @@ h2{
 
 #taskList .taskRecord .content{
     color: var(--bg);
-    width: 30%;
     display: flex;
 }
 
@@ -174,14 +173,14 @@ h2{
     width: 1rem;
     margin-top: auto;
     margin-bottom: auto;
-    padding-right: 1rem;
+    padding-right: 0.6rem;
 }
 
 
 #taskList .taskRecord .content .labelDiv img{
     display: none;
     height: 1.25rem;
-    margin: auto;
+    margin-right: 0.22rem;
 }
 
 #taskList .taskRecord .content .checklabel .checkbox{
@@ -214,7 +213,7 @@ h2{
 
 #taskList .taskRecord .content .text{
     color: var(--main);
-    font-size: small;
+    font-size: medium;
     width: 22.5rem;
 
 }
@@ -244,10 +243,9 @@ h2{
 }
 
 #taskList .taskRecord .actions{
-    padding-left: 2rem;
+    padding-left: 1.5rem;
     display: flex;
     justify-content: space-between;
-    gap: 1.5rem;
     color: var(--black);
 }
 
@@ -258,7 +256,7 @@ h2{
 }
 
 #taskList .taskRecord .actions .edit{
-    padding-right: 1.8rem;
+    padding-left: 1.8rem;
 }
 #taskList .taskRecord .actions .save{
     padding-right: 1.5rem;
