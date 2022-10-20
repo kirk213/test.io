@@ -273,7 +273,7 @@ $(function(){
             let text = $(elem).find(".text").val()
             let date = $(elem).find(".date").val()
             let check = $(elem).find(".checkbox").prop("checked");
-            
+            console.log(`elem:${elem},text:${text},date:${date},check:${check}`)
             jsonArray.push({"text":text,"date":date,"check":check}); 
             
         });
