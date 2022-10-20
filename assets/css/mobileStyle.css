@@ -24,7 +24,6 @@ body{
 /*ヘッダーレイアウト*/
 .layout{
     padding-top: 0.5rem;
-    margin: 0 auto;
 }
 
 #newToDo{
@@ -107,7 +106,9 @@ input,button{
 
 
 
-
+main{
+    margin-bottom: 3rem;
+}
 
 /*タスクリスト見出し、deleteAllボタン*/
 #taskListHead{
