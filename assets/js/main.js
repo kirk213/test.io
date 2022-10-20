@@ -27,11 +27,11 @@ form.addEventListener("submit",function(e){
     console.log(date);
     //テキストが入力されていない場合のアラート
     if(text === ""){
-        alert("タスクを入力してから追加してください。");
+        window.setTimeout(function(){alert("タスクを入力してください");}, 200);
         return;
     }//日付が入力されていない場合のアラート
     if(date === ""){
-        alert("日付を入力してから追加してください。");
+        window.setTimeout(function(){alert("日付を入力してください。");}, 200);
         return;
     }
     //配列に追加
@@ -48,14 +48,16 @@ form.addEventListener("submit",function(e){
 delallを受け取って、クリックをイベントトリガーに設定
 発火後、confirmを許可するとjsonarrayをクリアする*/
 document.getElementById("delAll").addEventListener("click",function(){
-    let result = window.confirm("すべてのタスクを消しますか？");
-    if(result){
-        jsonArray.length = 0;
-        //ローカルストレージに保存
-        localStorage.setItem("formData",JSON.stringify(jsonArray));
-        //addTaskListを呼び出してタスクリストの再表示
-        addTaskList(jsonArray);
-    };
+    window.setTimeout(function(){
+        let result = window.confirm("すべてのタスクを消しますか？");
+        if(result){
+            jsonArray.length = 0;
+            //ローカルストレージに保存
+            localStorage.setItem("formData",JSON.stringify(jsonArray));
+            //addTaskListを呼び出してタスクリストの再表示
+            addTaskList(jsonArray);
+        };
+    },200);
 });
 
 
@@ -232,6 +234,9 @@ $(function(){
     //ソート有効時
     function sortEnable(){
         console.log("enable");
+        let sw = $("#sortTask");
+        sw.css('background-color','rgb(57, 197, 207)');
+        sw.css('transition','0.2s all linear');
         let div = $(".labelDiv");
         div.children('label').css('display','none');
         div.children('img').css('display','block');
@@ -247,6 +252,9 @@ $(function(){
     //ソート無効時
     function sortDisable(){
         console.log("disable");
+        let sw = $("#sortTask");
+        sw.css('background-color','rgb(66, 66, 66)');
+        sw.css('transition','0.2s all linear');
         let div = $(".labelDiv");
         div.children("label").css('display','block');
         div.children("img").css('display','none');

@@ -12,7 +12,7 @@
 
 
 *{  
-    font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro','メイリオ', 'Meiryo', '游ゴシック', 'Yu Gothic', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+    font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro','メイリオ', 'Meiryo', '游ゴシック', 'Yu Gothic', 'ＭＳＰゴシック', 'MS PGothic', sans-serif;
     color: var(--main);
     background:var(--bg);
 }
@@ -100,7 +100,7 @@ input,button{
 
     cursor: pointer;
 }
-#newSubmit:hover{
+#newSubmit:active{
     background-color: var(--green);
     transition: 0.2s all linear;
 }
@@ -117,8 +117,7 @@ input,button{
     width: 98vw;
 }
 h2{
-    margin-top: 0; 
-    vertical-align: top;
+    margin-top: 0.5rem; 
 }
 
 #taskListBtn{
@@ -135,10 +134,7 @@ h2{
     width: 42.5%;
     padding: 0.25rem;
     border-radius: 20%;
-}
-#sortTask:hover{
-    background-color:var(--blue);
-    transition: 0.2s all linear;
+    cursor: pointer;
 }
 
 
@@ -151,7 +147,7 @@ h2{
     padding:0.25rem;
     border-radius: 20%;
 }
-#delAll:hover{
+#delAll:active{
     background-color:var(--red);
     transition: 0.2s all linear;
 }
@@ -270,7 +266,7 @@ h2{
     width: 15.5%;
     padding-right: 7%;
 }
-#taskList .taskRecord .actions .edit:hover{
+#taskList .taskRecord .actions .edit:active{
     color: var(--blue);
     transition: 0.2s all linear;
 }
@@ -283,7 +279,7 @@ h2{
     width: 16%;
 }
 
-#taskList .taskRecord .actions .delete:hover{
+#taskList .taskRecord .actions .delete:active{
     color: var(--red);
     transition: 0.2s all linear;
 }
