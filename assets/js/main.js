@@ -244,7 +244,6 @@ $(function(){
             disabled:false,
             handle:".labelDiv",
             axis:"y",
-            revert:true,
             opacity:"0.8"
         });
         judge = true;
@@ -272,8 +271,7 @@ $(function(){
             let elem = $(this)[0];
             let text = $(elem).find(".text").val()
             let date = $(elem).find(".date").val()
-            let check = $(elem).find(".checkbox").prop("checked");
-        
+            let check = $(elem).find(".checkbox").prop("checked");        
             jsonArray.push({"text":text,"date":date,"check":check}); 
             
         });
