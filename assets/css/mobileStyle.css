@@ -23,14 +23,14 @@ body{
 
 /*ヘッダーレイアウト*/
 .layout{
-    padding: 0.5rem 0.25rem;
+    padding-top: 0.5rem;
     margin: 0 auto;
 }
 
 #newToDo{
     display: flex;
     justify-content: space-between;
-    width: 96vw;
+    width: 98vw;
 }
 
 
@@ -114,7 +114,7 @@ input,button{
     display: flex;
     justify-content: space-between;
     height: 3.5rem;
-    width: 96vw;
+    width: 98vw;
 }
 h2{
     margin-top: 0; 
@@ -160,7 +160,7 @@ h2{
 /*追加されるタスクのスタイル*/
 
 #taskList .taskRecord{
-    width: 94vw;
+    width: 96vw;
     margin: 1rem 0 1rem 0;
     background-color: var(--gray);
     padding: 0.25rem 0 0.25rem 0.5rem;
@@ -225,7 +225,6 @@ h2{
 
 }
 
-
 /*日付、edit、deleteボタン*/
 
 #taskList .taskRecord .dateDiv{
@@ -251,22 +250,25 @@ h2{
 }
 
 #taskList .taskRecord .actions{
+    width: 96vw;
     text-align: right;
-    padding-left: 5%;
 }
 
 
 #taskList .taskRecord .actions button{
     cursor: pointer;
     color: var(--black);
-    padding: 0 ;
+    padding: 0 0;
+    vertical-align: top;
 }
 
 #taskList .taskRecord .actions .edit{
-padding-right: 10vw;
+    width: 15.5%;
+    padding-right: 7%;
 }
 #taskList .taskRecord .actions .save{
-    
+    width: 15.5%;
+    padding-right: 7%;
 }
 #taskList .taskRecord .actions .edit:hover{
     color: var(--blue);
@@ -278,11 +280,12 @@ padding-right: 10vw;
     transition: 0.2s all linear;
 }
 #taskList .taskRecord .actions .delete{
-    padding-right: 2%;
+    width: 16%;
 }
 
 #taskList .taskRecord .actions .delete:hover{
     color: var(--red);
     transition: 0.2s all linear;
 }
+
 
