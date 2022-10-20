@@ -242,7 +242,7 @@ $(function(){
         div.children('img').css('display','block');
         $("#taskList").sortable({
             disabled:false,
-            handle:".labelDiv",
+            //handle:".labelDiv",
             axis:"y",
             revert:true,
             opacity:"0.8"
@@ -285,6 +285,6 @@ $(function(){
         });
         //追加が終わったら配列をローカルストレージに保存
         localStorage.setItem("formData",JSON.stringify(jsonArray));
-        //addTaskList(jsonArray);
+        addTaskList(jsonArray);
     };
 });
