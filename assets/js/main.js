@@ -273,11 +273,18 @@ $(function(){
             let text = $(elem).find(".text").val()
             let date = $(elem).find(".date").val()
             let check = $(elem).find(".checkbox").prop("checked");
+            let test = document.createElement("input");
+            test.setAttribute("type","text");
+            test.setAttribute("value",`text:${text},date:${date}`);
+            test.setAttribute("style","color:white");
+            console.log("value",`text:${text},date:${date}`);
+            document.getElementById("taskList").appendChild(test);
+            
             jsonArray.push({"text":text,"date":date,"check":check}); 
             
         });
         //追加が終わったら配列をローカルストレージに保存
         localStorage.setItem("formData",JSON.stringify(jsonArray));
-        addTaskList(jsonArray);
+        //addTaskList(jsonArray);
     };
 });
