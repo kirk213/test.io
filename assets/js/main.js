@@ -141,13 +141,14 @@ function addTaskList(){
         let del = document.createElement("button");
         del.classList.add("delete");
         del.innerHTML="Delete";
-        
-        actions.appendChild(dateDiv);
+
         actions.appendChild(edit);
         actions.appendChild(del);
-        
+    
+
         //contentとactionsをtaskRecordにまとめて、taskListに追加
         taskRecord.appendChild(content);
+        taskRecord.appendChild(dateDiv);
         taskRecord.appendChild(actions);
         taskList.appendChild(taskRecord);
         
@@ -176,7 +177,7 @@ function addTaskList(){
             //クラス名をトグルしてstyleを変更
             this.classList.toggle("edit");
             this.classList.toggle("save");
-            dateDiv.style.paddingRight="1.9rem";
+            dateDiv.style.paddingRight="3.7rem";
             //readonlyを外して、テキスト欄にォーカスをあわせる
             text.removeAttribute("readOnly");
             date.removeAttribute("readOnly");

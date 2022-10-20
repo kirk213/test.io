@@ -206,25 +206,25 @@ h2{
 
 /*日付、edit、deleteボタン*/
 
-#taskList .taskRecord .actions .dateDiv{
+#taskList .taskRecord .dateDiv{
     display: flex;
-    padding-right: 2rem;
+    padding-right: 3.8rem;
 }
 
 
-#taskList .taskRecord .actions .dateDiv .placeholder{
+#taskList .taskRecord .dateDiv .placeholder{
     font-size: small;
     color: var(--gray);
     width: 9rem;
 }
 
-#taskList .taskRecord .actions .dateDiv .placeholderEnable{
+#taskList .taskRecord .dateDiv .placeholderEnable{
     font-size: small;
     color: var(--main);
-    width: 6.25rem;
+    width: 9rem;
 }
 
-#taskList .taskRecord .actions .dateDiv .date{
+#taskList .taskRecord .dateDiv .date{
     width: 8rem;
 }
 
