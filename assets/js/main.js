@@ -244,7 +244,9 @@ $(function(){
             disabled:false,
             handle:".labelDiv",
             axis:"y",
+            containment:$("#taskList"),
             opacity:"0.8"
+
         });
         judge = true;
     };
