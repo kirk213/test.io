@@ -1,3 +1,7 @@
+import { name } from "./sortFunc.js";
+
+console.log(name);
+
 //フォームの取得
 let form = document.getElementById("newToDo");
 //フォームの値、ローカルストレージのjsonを代入
@@ -21,6 +25,7 @@ if(localStorage.getItem("formData") !== null){
 
 //submitをトリガーとしてフォームデータを取得するイベント
 form.addEventListener("submit",function(e){
+
     e.preventDefault();
     let text = document.getElementById("newInput").value;
     let date = document.getElementById("newDate").value;
