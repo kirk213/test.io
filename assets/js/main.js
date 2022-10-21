@@ -243,8 +243,9 @@ $(function(){
         $("#taskList").sortable({
             disabled:false,
             handle:".labelDiv",
+            cursor:"move",
             axis:"y",
-            containment:$("#taskList"),
+            revert:"100",
             opacity:"0.8"
 
         });

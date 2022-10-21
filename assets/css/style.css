@@ -134,6 +134,7 @@ h2{
 
 #taskList{
     padding: 1rem 0;
+    height: auto+8rem;
 }
 
 /*追加されるタスクのスタイル*/
