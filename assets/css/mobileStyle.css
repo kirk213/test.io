@@ -221,7 +221,6 @@ h2{
     color: var(--main);
     font-size: medium;
     width: 86vw;
-    padding: 0;
 
 }
 
@@ -240,7 +239,7 @@ h2{
     display: block;
     font-size: small;
     color: var(--main);
-    width: 8.75rem;
+    width: 8.7em;
 }
 
 #taskList .taskRecord .content .tableDiv .dateDiv .date{
