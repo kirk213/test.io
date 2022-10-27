@@ -42,10 +42,7 @@ header h1{
 
 /*入力欄、日付、addボタン*/
 #textarea{
-    display: flex;
-    flex-flow: column;
-    justify-content:space-between;
-    padding: 0.25rem;
+     padding: 0.25rem;
     border-radius: 1rem;
     background-color: var(--gray);
     width: 78.5%;
@@ -244,7 +241,7 @@ h2{
 
 #taskList .taskRecord .content .tableDiv .dateDiv .date{
     font-size: small;
-    width: 8.5rem;
+    width: 35vw;
 }
 
 #taskList .taskRecord .actions{
