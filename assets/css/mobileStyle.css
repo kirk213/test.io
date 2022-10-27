@@ -239,12 +239,12 @@ h2{
     display: block;
     font-size: small;
     color: var(--main);
-    width: 8.7em;
+    width: 8.75rem;
 }
 
 #taskList .taskRecord .content .tableDiv .dateDiv .date{
     font-size: small;
-    width: 7.5rem;
+    width: 7.5em;
 }
 
 #taskList .taskRecord .actions{
