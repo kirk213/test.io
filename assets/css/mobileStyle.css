@@ -42,10 +42,9 @@ header h1{
 
 /*入力欄、日付、addボタン*/
 #textarea{
-    display: flex;
-    /*flex-flow: column;*/
     justify-content:center;
     align-items:center;
+    vertical-align: top;
     padding: 0.25rem;
     border-radius: 1rem;
     background-color: var(--gray);
@@ -63,22 +62,26 @@ header h1{
     width: 95%;
     padding-left: 0.5rem;
     background-color: transparent;
+    vertical-align: top;
 }
 
 #newInput{
     width: 95%;
     background-color: transparent;
+    vertical-align: top;
 }
 
 #newDateDiv{
     width: 15rem;
     padding-left: 0.5rem;
     background-color: transparent;
+    vertical-align: top;
 }
 #newDate{
     width: 64%;
     color: var(--main);
     background-color: transparent;
+    vertical-align: top;
 }
 
 input,button{
