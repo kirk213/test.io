@@ -41,22 +41,31 @@ header h1{
 
 
 /*入力欄、日付、addボタン*/
-#textarea{
+/*Android用*/
+.Android #textarea{
     display: flex;
     flex-flow: column;
-    -webkit-box-pack: justify;
-    -moz-box-pack: justify;
-    -ms-flex-pack: justify;
-    -webkit-justify-content: space-between;
     justify-content: space-between;
-    align-items: flex-start;
-    padding-left: 0.25rem;
-    padding-right: 0.25rem;
+    padding: 0.25rem;
     border-radius: 1rem;
     background-color: var(--gray);
     width: 78.5%;
     height: 3rem;
 }
+/*iPhone用*/
+.iPhone #textarea{
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: column;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    padding: 0.25rem;
+    border-radius: 1rem;
+    background-color: var(--gray);
+    width: 78.5%;
+    height: 3rem;
+}
+
 #textarea *{
     background-color: var(--gray);
 }
