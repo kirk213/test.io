@@ -57,11 +57,14 @@ header h1{
     display: -webkit-flex;
     display: flex;
     flex-flow: column;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
     -webkit-justify-content: space-between;
     justify-content: space-between;
     padding: 0.25rem;
     border-radius: 1rem;
-    background-color: var(--gray);
+    background-color: var(--red);
     width: 78.5%;
     height: 3rem;
 }
