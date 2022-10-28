@@ -62,26 +62,24 @@ header h1{
     width: 95%;
     padding-left: 0.5rem;
     background-color: transparent;
-    vertical-align: top;
+    vertical-align: auto;
 }
 
 #newInput{
     width: 95%;
     background-color: transparent;
-    vertical-align: top;
 }
 
 #newDateDiv{
     width: 15rem;
     padding-left: 0.5rem;
     background-color: transparent;
-    vertical-align: top;
+    vertical-align: auto;
 }
 #newDate{
     width: 64%;
     color: var(--main);
     background-color: transparent;
-    vertical-align: top;
 }
 
 input,button{
@@ -239,7 +237,7 @@ h2{
     display: block;
     font-size: small;
     color: var(--main);
-    width: 8.75rem;
+    width: 7.5rem;
 }
 
 #taskList .taskRecord .content .tableDiv .dateDiv .date{
