@@ -54,14 +54,6 @@ header h1{
 }
 /*iPhone用*/
 .iPhone #textarea{
-    display: -webkit-flex;
-    display: flex;
-    flex-flow: column;
-    -webkit-box-pack: justify;
-    -moz-box-pack: justify;
-    -ms-flex-pack: justify;
-    -webkit-justify-content: space-between;
-    justify-content: space-between;
     padding: 0.25rem;
     border-radius: 1rem;
     background-color: var(--green);
@@ -78,7 +70,7 @@ header h1{
 
 #newInputDiv{
     width: 95%;
-    padding-left: 0.5rem;
+    padding-left: 0.5rem;   
     background-color: transparent;
 }
 
@@ -93,6 +85,12 @@ header h1{
     margin-bottom: 3rem;
     background-color: transparent;
 }
+.iPhone{
+    width: 30rem;
+    padding: 100rem;
+    margin: 100rem;
+}
+
 #newDate{
     width: 64%;
     color: var(--main);
