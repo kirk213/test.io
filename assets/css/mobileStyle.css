@@ -43,7 +43,6 @@ header h1{
 /*入力欄、日付、addボタン*/
 #textarea{
     display: flex;
-    flex-flow: column;
     -webkit-box-pack: justify;
     -moz-box-pack: justify;
     -ms-flex-pack: justify;
