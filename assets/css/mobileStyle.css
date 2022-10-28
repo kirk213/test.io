@@ -43,9 +43,9 @@ header h1{
 /*入力欄、日付、addボタン*/
 #textarea{
     display: flex;
-    flex-flow: column;
-    justify-content:space-between;
-    margin: auto;
+    /*flex-flow: column;*/
+    justify-content:center;
+    align-items:center;
     padding: 0.25rem;
     border-radius: 1rem;
     background-color: var(--gray);
@@ -62,26 +62,22 @@ header h1{
 #newInputDiv{
     width: 95%;
     padding-left: 0.5rem;
-    margin: auto;
     background-color: transparent;
 }
 
 #newInput{
     width: 95%;
-    margin: auto;
     background-color: transparent;
 }
 
 #newDateDiv{
     width: 15rem;
     padding-left: 0.5rem;
-    margin: auto;
     background-color: transparent;
 }
 #newDate{
     width: 64%;
     color: var(--main);
-    margin: auto;
     background-color: transparent;
 }
 
