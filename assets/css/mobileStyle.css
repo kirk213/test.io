@@ -253,9 +253,14 @@ h2{
     width: 8.75rem;
 }
 
-#taskList .taskRecord .content .tableDiv .dateDiv .date{
+.Android #taskList .taskRecord .content .tableDiv .dateDiv .date{
     font-size: small;
     width: 8rem;
+}
+
+.iPhone #taskList .taskRecord .content .tableDiv .dateDiv .date{
+    font-size: small;
+    width: 7rem;
 }
 
 #taskList .taskRecord .actions{
