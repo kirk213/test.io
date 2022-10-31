@@ -54,6 +54,9 @@ header h1{
 }
 /*iPhone用*/
 .iPhone #textarea{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
     padding: 0.25rem;
     border-radius: 1rem;
     width: 78.5%;
