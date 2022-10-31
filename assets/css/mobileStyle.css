@@ -79,7 +79,7 @@ header h1{
     background-color: transparent;
 }
 
-#newDateDiv{
+.Android #newDateDiv{
     width: 15rem;
     padding-left: 0.5rem;
     background-color: red;
