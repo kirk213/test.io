@@ -256,6 +256,10 @@ h2{
     width: 8.75rem;
 }
 
+.iPhone #taskList .taskRecord .content .tableDiv .dateDiv .date{
+    font-size: small;
+    width: 7.6rem;
+}
 .Android #taskList .taskRecord .content .tableDiv .dateDiv .date{
     font-size: small;
     width: 6.7rem;
