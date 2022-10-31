@@ -58,6 +58,7 @@ header h1{
     border-radius: 1rem;
     width: 78.5%;
     height: 3rem;
+    background-color: var(--gray);
 }
 
 #textarea *{
