@@ -222,10 +222,9 @@ h2{
 /*テキスト欄*/
 
 .iPhone #taskList .taskRecord .content .tableDiv .text{
-    color: aqua;
+    color: var(--main);
     font-size: medium;
     width: 86vw;
-    margin: 0;
     padding-right: 0;
     padding-top: 0;
     padding-bottom: 0;
@@ -270,8 +269,8 @@ h2{
 .iPhone #taskList .taskRecord .actions{
     width: 96vw;
     text-align: right;
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 #taskList .taskRecord .actions{
     width: 96vw;
@@ -279,14 +278,6 @@ h2{
 }
 
 
-.iPhone #taskList .taskRecord .actions button{
-    cursor: pointer;
-    color: var(--black);
-    padding: 0 0;
-    vertical-align: top;
-    margin: 0;
-    padding: 0;
-}
 #taskList .taskRecord .actions button{
     cursor: pointer;
     color: var(--black);
