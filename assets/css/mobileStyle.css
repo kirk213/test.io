@@ -227,20 +227,18 @@ h2{
     width: 86vw;
     margin: 0;
     padding: 0;
+    padding-left: auto;
 }
 #taskList .taskRecord .content .tableDiv .text{
     color: var(--main);
     font-size: medium;
     width: 86vw;
-
 }
 
 /*日付、edit、deleteボタン*/
 
 .iPhone #taskList .taskRecord .content .tableDiv .dateDiv{
     display: flex;
-    margin: 0;
-    padding: 0;
 }
 #taskList .taskRecord .content .tableDiv .dateDiv{
     display: flex;
