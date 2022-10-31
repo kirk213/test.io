@@ -56,7 +56,6 @@ header h1{
 .iPhone #textarea{
     padding: 0.25rem;
     border-radius: 1rem;
-    background-color: var(--green);
     width: 78.5%;
     height: 3rem;
 }
@@ -72,6 +71,7 @@ header h1{
     width: 95%;
     padding-left: 0.5rem;   
     background-color: transparent;
+    height: 1rem;
 }
 
 #newInput{
@@ -86,8 +86,7 @@ header h1{
 }
 .iPhone #newDateDiv{
     width: 15rem;
-    margin-bottom: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 3rem;
 }
 
 #newDate{
