@@ -82,11 +82,12 @@ header h1{
 .Android #newDateDiv{
     width: 15rem;
     padding-left: 0.5rem;
-    background-color: red;
+    background-color: rgba(255, 0, 0, 0.164);
 }
 .iPhone #newDateDiv{
     width: 15rem;
     padding-top: 3rem;
+    background-color: transparent;
 }
 
 #newDate{
