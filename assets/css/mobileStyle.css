@@ -260,6 +260,10 @@ h2{
     font-size: small;
     width: 7.8rem;
 }
+.Android #taskList .taskRecord .content .tableDiv .dateDiv .date{
+    font-size: small;
+    width: 7.2rem;
+}
 #taskList .taskRecord .content .tableDiv .dateDiv .date{
     font-size: small;
     width: 7.5rem;
