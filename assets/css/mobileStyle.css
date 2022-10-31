@@ -226,7 +226,10 @@ h2{
     font-size: medium;
     width: 86vw;
     margin: 0;
-    padding: 0 auto;
+    padding-left: auto;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 #taskList .taskRecord .content .tableDiv .text{
     color: var(--main);
