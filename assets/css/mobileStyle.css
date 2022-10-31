@@ -178,6 +178,13 @@ h2{
 
 /*追加されるタスクのスタイル*/
 
+.iPhone #taskList .taskRecord{
+    width: 96vw;
+    margin: 1rem 0 1rem 0;
+    background-color: var(--gray);
+    padding: 0;
+    border-radius: 1rem;
+}
 #taskList .taskRecord{
     width: 96vw;
     margin: 1rem 0 1rem 0;
@@ -228,6 +235,16 @@ h2{
     display: none;
 }
 
+.iPhone #taskList .taskRecord .content .checklabel{
+    cursor: pointer;
+    display:block;
+    margin: auto;
+	height: 1px;
+    width: 1pxpx;
+	border: 1pxpx solid var(--main);
+    border-radius: 15%;
+    transition: 0.2s all linear;
+}
 #taskList .taskRecord .content .checklabel{
     cursor: pointer;
     display:block;
