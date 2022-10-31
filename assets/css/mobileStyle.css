@@ -96,7 +96,6 @@ header h1{
 #newDateDiv{
     width: 15rem;
     padding-left: 0.5rem;
-    background-color: rgba(255, 0, 0, 0.164);
 }
 
 
@@ -190,6 +189,13 @@ h2{
     background-color: transparent;
 }
 
+.iPhone #taskList .taskRecord .content{
+    color: var(--bg);
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: auto;
+}
 #taskList .taskRecord .content{
     color: var(--bg);
     display: flex;
@@ -198,6 +204,12 @@ h2{
 }
 
 /*チェックボックス*/
+.iPhone #taskList .taskRecord .content .labelDiv{
+    width: 1rem;
+    margin: 0;
+    padding: 0;
+    padding-right: 0.6rem;
+}
 #taskList .taskRecord .content .labelDiv{
     width: 1rem;
     margin-top: auto;
@@ -240,6 +252,14 @@ h2{
 
 /*テキスト欄*/
 
+.iPhone #taskList .taskRecord .content .tableDiv .text{
+    color: var(--main);
+    font-size: medium;
+    width: 86vw;
+    margin: 0;
+    padding: 0;
+
+}
 #taskList .taskRecord .content .tableDiv .text{
     color: var(--main);
     font-size: medium;
@@ -249,6 +269,11 @@ h2{
 
 /*日付、edit、deleteボタン*/
 
+.iPhone #taskList .taskRecord .content .tableDiv .dateDiv{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
 #taskList .taskRecord .content .tableDiv .dateDiv{
     display: flex;
 }
@@ -265,26 +290,41 @@ h2{
     width: 8.75rem;
 }
 
-.Android #taskList .taskRecord .content .tableDiv .dateDiv .date{
+.iPhone #taskList .taskRecord .content .tableDiv .dateDiv .date{
     font-size: small;
     width: 8rem;
 }
-
-.iPhone #taskList .taskRecord .content .tableDiv .dateDiv .date{
+#taskList .taskRecord .content .tableDiv .dateDiv .date{
     font-size: small;
-    width: 7rem;
+    width: 7.5rem;
 }
 
+
+.iPhone #taskList .taskRecord .actions{
+    width: 96vw;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+}
 #taskList .taskRecord .actions{
     width: 96vw;
     text-align: right;
 }
 
 
+.iPhone #taskList .taskRecord .actions button{
+    cursor: pointer;
+    color: var(--black);
+    padding: 0 0;
+    vertical-align: top;
+    margin: 0;
+    padding: 0;
+}
 #taskList .taskRecord .actions button{
     cursor: pointer;
     color: var(--black);
     padding: 0 0;
+    margin: 0;
     vertical-align: top;
 }
 
