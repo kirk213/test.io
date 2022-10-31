@@ -258,9 +258,6 @@ h2{
 
 .iPhone #taskList .taskRecord .content .tableDiv .dateDiv .date{
     font-size: small;
-    width: auto;
-    padding: 0;
-    margin: 0%;
 }
 #taskList .taskRecord .content .tableDiv .dateDiv .date{
     font-size: small;
