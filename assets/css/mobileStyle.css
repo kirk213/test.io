@@ -86,13 +86,20 @@ header h1{
 }
 .iPhone #newDateDiv{
     width: 15rem;
-    padding-bottom: 30rem;
+    padding-left: 0.5rem;
+    padding-bottom: 30em;
     background-color: transparent;
 }
 
 #newDate{
     width: 64%;
     color: var(--main);
+    background-color: transparent;
+}
+
+.iPhone #newDate{
+    width: 64%;
+    color: red;
     background-color: transparent;
 }
 
