@@ -248,7 +248,7 @@ h2{
     color: var(--main);
     font-size: medium;
     width: 86vw;
-
+    margin: 0;
 }
 #taskList .taskRecord .content .tableDiv .text{
     color: var(--main);
