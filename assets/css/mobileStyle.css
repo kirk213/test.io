@@ -222,7 +222,7 @@ h2{
 /*テキスト欄*/
 
 .iPhone #taskList .taskRecord .content .tableDiv .text{
-    color: var(--main);
+    color: aqua;
     font-size: medium;
     width: 86vw;
     margin: 0;
