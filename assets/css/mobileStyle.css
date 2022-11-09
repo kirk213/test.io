@@ -294,7 +294,7 @@ h2{
     width: 18%;
     padding-right: 10%;
 }
-#taskList .taskRecord .actions .detail:active{
+#taskList .taskRecord .actions .detail:hover{
     color: var(--green);
     transition: 0.2s all linear;
 }
@@ -307,7 +307,7 @@ h2{
     width: 15.5%;
     padding-right: 7%;
 }
-#taskList .taskRecord .actions .edit:active{
+#taskList .taskRecord .actions .edit:hover{
     color: var(--blue);
     transition: 0.2s all linear;
 }
@@ -320,7 +320,7 @@ h2{
     width: 16%;
 }
 
-#taskList .taskRecord .actions .delete:active{
+#taskList .taskRecord .actions .delete:hover{
     color: var(--red);
     transition: 0.2s all linear;
 }
