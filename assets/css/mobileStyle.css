@@ -290,6 +290,15 @@ h2{
     vertical-align: top;
 }
 
+#taskList .taskRecord .actions .detail{
+    width: 18%;
+    padding-right: 10%;
+}
+#taskList .taskRecord .actions .detail:active{
+    color: var(--green);
+    transition: 0.2s all linear;
+}
+
 #taskList .taskRecord .actions .edit{
     width: 15.5%;
     padding-right: 7%;

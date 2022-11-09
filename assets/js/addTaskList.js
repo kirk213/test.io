@@ -82,9 +82,12 @@ function addTaskList(){
         table.appendChild(dateDiv);
         content.appendChild(table);
         
-        //編集と削除
+        //詳細と編集と削除
         let actions = document.createElement("div");
         actions.classList.add("actions");
+        let detail = document.createElement("button");
+        detail.classList.add("detail");
+        detail.innerHTML="detail";
         let edit = document.createElement("button");
         edit.classList.add("edit");
         edit.innerHTML="Edit";
@@ -92,6 +95,7 @@ function addTaskList(){
         del.classList.add("delete");
         del.innerHTML="Delete";
 
+        actions.appendChild(detail);
         actions.appendChild(edit);
         actions.appendChild(del);
     
@@ -142,15 +146,24 @@ function addTaskList(){
             text.focus();
         });
     
-        
+        //detailボタンを押した時の動作
+
+
+
         //deleteボタンを押したときの動作
         del.addEventListener('click',function(){
-            //フィルターで対象のタスク以外をsetJson関数に渡すしてjsonArrayに代入
-            setJson(jsonArray.filter(function(arr){
-                return arr !== array;
-            }));
-            localStorage.setItem('formData',JSON.stringify(jsonArray));
-            addTaskList();
+            window.setTimeout(function(){
+                //タスクを消すか、y/nのポップアップを表示
+                let result = window.confirm("タスクを消しますか？");
+                if(result){
+                    //フィルターで対象のタスク以外をsetJson関数に渡すしてjsonArrayに代入
+                    setJson(jsonArray.filter(function(arr){
+                        return arr !== array;
+                    }));
+                    localStorage.setItem('formData',JSON.stringify(jsonArray));
+                    addTaskList();
+                };
+            },200);
         }); 
         
         //checkボタンを押したときの動作

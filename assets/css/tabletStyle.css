@@ -131,43 +131,42 @@ h2{
     transition: 0.2s all linear;
 }
 
+
+/*追加されるタスクのスタイル*/
+
 #taskList{
     padding: 1rem 0;
     height: auto+8rem;
 }
 
-/*追加されるタスクのスタイル*/
 #taskList .taskRecord{
     margin: 1.2rem 0 1.2rem 0;
-    display: flex;
-    justify-content: space-between;
     background-color: var(--gray);
-    padding: 0.5rem 1rem;
     border-radius: 1rem;
 }
 #taskList .taskRecord *{
-    background-color: var(--gray);
+    background-color: transparent;
 }
 
 #taskList .taskRecord .content{
     color: var(--bg);
     display: flex;
-    width: 80%;
+    width: auto;
 }
 
 /*チェックボックス*/
 #taskList .taskRecord .content .labelDiv{
-    width: 16px;
+    width: 1rem;
     margin-top: auto;
     margin-bottom: auto;
-    padding-right: 1rem;
+    padding-right: 0.6rem;
 }
 
 
 #taskList .taskRecord .content .labelDiv img{
     display: none;
     height: 1.25rem;
-    margin: auto;
+    margin-right: 0.22rem;
 }
 
 #taskList .taskRecord .content .checklabel .checkbox{
@@ -196,73 +195,88 @@ h2{
 }
 
 
-/*タスク、日付欄*/
-#taskList .taskRecord .content .tableDiv{
-    width: 100%;
-}
+/*テキスト欄*/
 
+.iPhone #taskList .taskRecord .content .tableDiv .text{
+    color: var(--main);
+    font-size: medium;
+    width: 86vw;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
 #taskList .taskRecord .content .tableDiv .text{
     color: var(--main);
-    font-size: 1.1rem;
-    width: 100%;
-
+    font-size: medium;
+    width: 86vw;
 }
 
+/*日付*/
 
-
+.iPhone #taskList .taskRecord .content .tableDiv .dateDiv{
+    display: flex;
+}
 #taskList .taskRecord .content .tableDiv .dateDiv{
     display: flex;
 }
 
 
 #taskList .taskRecord .content .tableDiv .dateDiv .placeholder{
-    font-size: small;
-    color: var(--gray);
-    width: 9rem;
+    display: none;
 }
 
 #taskList .taskRecord .content .tableDiv .dateDiv .placeholderEnable{
+    display: block;
     font-size: small;
     color: var(--main);
-    width: 9rem;
+    width: 8.75rem;
 }
 
-#taskList .taskRecord .content .tableDiv .dateDiv .date{
+.iPhone #taskList .taskRecord .content .tableDiv .dateDiv .date{
+    font-size: small;
     width: 7.6rem;
 }
-
-
-
-/*detail、edit、deleteボタン*/
-#taskList .taskRecord .actions{
-    display: flex;
-    justify-content: space-between;
-    gap: 1.5rem;
-    padding-left: 1.5rem;
-    color: var(--black);
+.Android #taskList .taskRecord .content .tableDiv .dateDiv .date{
+    font-size: small;
+    width: 6.7rem;
+}
+#taskList .taskRecord .content .tableDiv .dateDiv .date{
+    font-size: small;
+    width: 7.5rem;
 }
 
+/*detail、edit、deleteボタン*/
+
+#taskList .taskRecord .actions{
+    text-align: right;
+    padding-right: 1rem;
+    margin: 0;
+}
+
+
 #taskList .taskRecord .actions button{
-    padding: 0 0;
     cursor: pointer;
     color: var(--black);
+    padding: 0 0;
+    margin: 0;
+    vertical-align: top;
 }
 
 #taskList .taskRecord .actions .detail{
-    padding-right: 1.8rem;
+    padding-right: 3rem;
 }
-#taskList .taskRecord .actions .detail:hover{
+#taskList .taskRecord .actions .detail:active{
     color: var(--green);
     transition: 0.2s all linear;
 }
 
 #taskList .taskRecord .actions .edit{
-    padding-right: 1.8rem;
+    padding-right: 3.5rem;
 }
 #taskList .taskRecord .actions .save{
-    padding-right: 1.5rem;
+    padding-right: 3.2rem;
 }
-#taskList .taskRecord .actions .edit:hover{
+#taskList .taskRecord .actions .edit:active{
     color: var(--blue);
     transition: 0.2s all linear;
 }
@@ -271,9 +285,10 @@ h2{
     color: var(--green);
     transition: 0.2s all linear;
 }
+#taskList .taskRecord .actions .delete{
+}
 
-#taskList .taskRecord .actions .delete:hover{
+#taskList .taskRecord .actions .delete:active{
     color: var(--red);
     transition: 0.2s all linear;
 }
-
