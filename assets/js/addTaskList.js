@@ -1,6 +1,7 @@
 //インポート、エクスポート
 import {jsonArray,setJson} from "./main.js";
-export {addTaskList};
+import { test } from "./overlay.js";
+export {addTaskList,jsonArray};
 
 //関数系
 function addTaskList(){
@@ -11,7 +12,7 @@ function addTaskList(){
     //htmlに追加されている要素を一度削除
     taskList.innerHTML="";
 
-    jsonArray.forEach(function(array){
+    jsonArray.forEach(function(array,index){
         //追加する要素の作成
         let taskRecord = document.createElement("div");
         taskRecord.classList.add("taskRecord");
@@ -104,7 +105,10 @@ function addTaskList(){
         taskRecord.appendChild(content);
         taskRecord.appendChild(actions);
         taskList.appendChild(taskRecord);
-        
+        //detailボタンを押した時の動作
+        detail.addEventListener('click',function(){
+            test(jsonArray,index);
+        })
         
         //editボタンを押した時の動作
         edit.addEventListener('click',function(){
