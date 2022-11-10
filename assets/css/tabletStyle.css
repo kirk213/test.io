@@ -1,7 +1,7 @@
 :root{
     --bg:rgb(36, 36, 36);
     --black:rgb(10, 10, 10);
-    --gray:rgb(66, 66, 66);
+    --gray:rgb(49, 49, 49);
     --blue:rgb(57, 197, 207);
     --red:rgb(201, 59, 59);
     --green:rgb(85, 194, 75);
@@ -17,7 +17,21 @@
     background: var(--bg);
 }
 
-
+*::-webkit-scrollbar {
+    width: 1rem;
+}
+  
+*::-webkit-scrollbar-track {
+    background-color: rgb(24, 24, 24);
+    height: 99%;
+}
+  
+*::-webkit-scrollbar-thumb {
+    border: 5px solid transparent;
+    background-clip: content-box;
+    border-radius: 1rem;
+    background-color: #616161;
+}
 
 /*ヘッダーレイアウト*/
 .layout{
@@ -133,6 +147,10 @@ h2{
 
 
 /*追加されるタスクのスタイル*/
+#taskList{
+    padding: 1rem 0;
+    margin-bottom: 8rem;
+}
 
 #taskList .taskRecord{
     margin: 1rem 0 1rem 0;
@@ -241,7 +259,7 @@ h2{
 }
 
 #taskList .taskRecord .actions .detail{
-    padding-right: 3rem;
+    padding-right: 2rem;
 }
 #taskList .taskRecord .actions .detail:active{
     color: var(--green);
@@ -251,12 +269,14 @@ h2{
 }
 
 #taskList .taskRecord .actions .edit{
-    padding-right: 3.5rem;
+    padding-right: 3.25rem;
+    padding-left: 1.5rem;
     background-color: transparent;
     background: none;
 }
 #taskList .taskRecord .actions .save{
-    padding-right: 3.2rem;
+    padding-right: 3rem;
+    padding-left: 1.35rem;
     background-color: transparent;
     background: none;
 }

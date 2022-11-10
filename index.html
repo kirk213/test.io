@@ -8,10 +8,16 @@
         <link rel="stylesheet" href="./assets/css/mobileStyle.css" media="screen and (max-width:549px)">
         <link rel="stylesheet" href="./assets/css/tabletStyle.css" media="screen and (min-width:550px) and (max-width:649px)">
         <link rel="stylesheet" href="./assets/css/style.css" media="screen and (min-width:650px)">
+        <link rel="stylesheet" href="./assets/css/overlayStyle.css">
         <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.css" integrity="sha512-bYPO5jmStZ9WI2602V2zaivdAnbAhtfzmxnEGh9RwtlI00I9s8ulGe4oBa5XxiC6tCITJH/QG70jswBhbLkxPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
+        <div id="overlay">
+            <div id="overlayTask">
+                <input id="parentTask" type="text" readonly="true">
+            </div>
+        </div>
         <header class="layout">
             <h1>New Task</h1>
             <div>
@@ -28,7 +34,6 @@
                 </form>
             </div>
         </header>
-        
         <main class="layout">
             <div id="taskListHead">
                 <h2>Task List</h2>

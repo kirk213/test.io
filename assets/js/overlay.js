@@ -1,6 +1,14 @@
 export {test}
 
 function test(index){
-    console.log(index);
-    
+    $("#overlay").fadeIn().css('display','flex');;
 }
+
+$("#overlayTask").click(function(e){
+    e.stopPropagation();
+})
+
+$("#overlay").click(function(){
+    $("#overlay").fadeOut();
+});
+

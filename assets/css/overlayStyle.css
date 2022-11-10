@@ -1,0 +1,29 @@
+/*オーバーレイ*/
+#overlay{
+    display: none;
+    background: rgba(15, 15, 15, 0.548);
+    position: fixed;
+    min-width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+#overlayTask{
+    position: fixed;
+    background:rgb(34, 34, 34);
+    width: 45rem;
+    height:55rem;
+    border-radius: 1rem;
+    overflow-y: scroll;
+}
+
+
+@media screen and (max-width:549px){}
+@media screen and (min-width:550px) and (max-width:649px){}
+@media screen and (min-width:650px){}
+
+
+#parentTask{
+    background-color: transparent;
+}
+

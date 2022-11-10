@@ -107,7 +107,8 @@ function addTaskList(){
         taskList.appendChild(taskRecord);
         //detailボタンを押した時の動作
         detail.addEventListener('click',function(){
-            test(jsonArray,index);
+            test(index);
+            console.log("test");
         })
         
         //editボタンを押した時の動作
