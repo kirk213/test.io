@@ -48,28 +48,28 @@ header h1{
     border-radius: 1rem;
     background-color: var(--gray);
     width: 78.5%;
-    height: 3rem;
 }
 
 #textarea *{
     background-color: transparent;
 }
 
+textarea{
+    border: none;
+    resize: none;
 
+}
 
 #newInputDiv{
     width: 95%;
     padding-left: 0.5rem;   
     background-color: transparent;
-    height: 1.25rem;
 }
 
 
 #newInput{
     width: 95%;
     background-color: transparent;
-    border: none;
-    resize: none;
 }
 
 .iPhone #newDateDiv{

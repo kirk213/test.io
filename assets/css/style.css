@@ -63,13 +63,14 @@ input,button{
     background-color: var(--gray);
 }
 
-#newInputDiv{
-    height: 1.3rem;
-}
-#newInput{
-    width: 100%;
+textarea{
     border: none;
     resize: none;
+}
+
+
+#newInput{
+    width: 100%;
 }
 
 

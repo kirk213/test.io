@@ -1,6 +1,7 @@
 //インポート、エクスポート
 import {jsonArray,setJson} from "./main.js";
 import { test } from "./overlay.js";
+import { autoHeightTextarea } from "./textarea.js";
 export {addTaskList,jsonArray};
 
 //関数系
@@ -47,10 +48,10 @@ function addTaskList(){
 
         
         //タスク
-        let text = document.createElement("input");
-        text.setAttribute("type","text");
+        let text = document.createElement("textarea");
         text.setAttribute("class","text");
-        text.setAttribute("value",array.text);
+        text.setAttribute("rows","1");
+        text.value=array.text;
         text.setAttribute("readOnly","true");
         
         
@@ -181,4 +182,6 @@ function addTaskList(){
             }
         })  
     });
+    //textareaの行数自動調整
+    autoHeightTextarea();
 };
