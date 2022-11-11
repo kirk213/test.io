@@ -15,7 +15,13 @@
     <body>
         <div id="overlay">
             <div id="overlayTask">
-                <input id="parentTask" type="text" readonly="true">
+                <div id="ctrlOverlayTask">
+                    <span id="closeBtn"></span>
+                </div>
+                <div id="parent">
+                    <input id="parentTask" type="text" readonly="true">
+                    <input id="parentDate" type="text" readonly="true">
+                </div>
             </div>
         </div>
         <header class="layout">
@@ -24,7 +30,7 @@
                 <form id="newToDo">
                     <div id="textarea">
                         <div id="newInputDiv">
-                            <input type="text" id="newInput" placeholder="タスクを入力してください">
+                            <textarea id="newInput" rows="1" placeholder="タスクを入力してください"></textarea>
                         </div>
                         <div id="newDateDiv">
                             <input type=text id="newDate" inputmode="none" placeholder="クリックして日時を選択">

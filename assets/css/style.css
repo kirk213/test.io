@@ -17,20 +17,9 @@
     background: var(--bg);
 }
 
-*::-webkit-scrollbar {
-    width: 1rem;
-}
-  
-*::-webkit-scrollbar-track {
-    background-color: rgb(24, 24, 24);
-    height: 99%;
-}
-  
-*::-webkit-scrollbar-thumb {
-    border: 5px solid transparent;
-    background-clip: content-box;
-    border-radius: 1rem;
-    background-color: #616161;
+
+body{
+    margin: 0;
 }
 
 /*ヘッダーレイアウト*/
@@ -63,7 +52,7 @@ header h1{
     background-color: var(--gray);
 }
 #newToDo #textarea *{
-    background-color: var(--gray);
+    background-color:transparent;
 }
 
 input,button{
@@ -74,9 +63,13 @@ input,button{
     background-color: var(--gray);
 }
 
+#newInputDiv{
+    height: 1.3rem;
+}
 #newInput{
-    font-size: medium;
     width: 100%;
+    border: none;
+    resize: none;
 }
 
 

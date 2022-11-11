@@ -88,7 +88,7 @@ function addTaskList(){
         actions.classList.add("actions");
         let detail = document.createElement("button");
         detail.classList.add("detail");
-        detail.innerHTML="detail";
+        detail.innerHTML="Detail";
         let edit = document.createElement("button");
         edit.classList.add("edit");
         edit.innerHTML="Edit";
@@ -105,10 +105,11 @@ function addTaskList(){
         taskRecord.appendChild(content);
         taskRecord.appendChild(actions);
         taskList.appendChild(taskRecord);
+
+
         //detailボタンを押した時の動作
         detail.addEventListener('click',function(){
-            test(index);
-            console.log("test");
+            test(index,jsonArray);
         })
         
         //editボタンを押した時の動作
@@ -151,9 +152,6 @@ function addTaskList(){
             text.focus();
         });
     
-        //detailボタンを押した時の動作
-
-
 
         //deleteボタンを押したときの動作
         del.addEventListener('click',function(){
